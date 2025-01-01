@@ -4,7 +4,7 @@ import Register from './components/Register';
 import axios from 'axios'
 import { useEffect } from 'react';
 
-axios.defaults.url = "http://localhost:5000/"
+axios.defaults.url = "http://localhost:5000"
 
 function App() {
   return (
