@@ -10,6 +10,8 @@ build/
 .docker/
 .env
 *.log
+.env
+
 
 
 # testing
