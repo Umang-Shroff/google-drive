@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const userRouter = require("./routes/user.routes");
+const cookieParser = require('cookie-parser')
 const connectToDb = require('./config/db')
 connectToDb();
 
@@ -8,6 +9,7 @@ const app = express();
 require("dotenv").config();
 
 app.use(cors());
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const port = process.env.PORT || 5000;
