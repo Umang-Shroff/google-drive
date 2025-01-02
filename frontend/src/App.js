@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import Register from './components/Register';
+import Home from './components/Home';
 import axios from 'axios'
 import { useEffect } from 'react';
 
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index path="/register" element={<Register/>}/>
+          <Route path="/" element={<Home/>}/>
         </Routes>
       </BrowserRouter>
     </>
