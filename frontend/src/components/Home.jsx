@@ -115,8 +115,8 @@ const Home = () => {
       <nav className="flex justify-between items-center bg-gray-900 text-white p-4">
         <div className="text-xl">HomePage</div>
         <div>
-          <button className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md mr-3">Login</button>
-          <button className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md">Sign Up</button>
+          <a href="/login" className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md mr-3">Login</a>
+          <a href="/register" className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md">Sign Up</a>
         </div>
       </nav>
 
